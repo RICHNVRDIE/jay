@@ -5,5 +5,5 @@ RUN mkdir /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.74/bin/apache-tomcat-9.0.74.tar.gz .
 RUN tar -xvzf apache-tomcat-9.0.74.tar.gz
 RUN mv apache-tomcat-9.0.74/* /opt/tomcat
-EXPOSE 8082
+EXPOSE 8081
 CMD ["/opt/tomcat/bin/catalina.sh","run"]
